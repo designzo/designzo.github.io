@@ -1,0 +1,13 @@
+$default-size: 16;
+
+$base-en-font: 'raleway', sans-serif;
+$base-ko-font: '맑은고딕', malgungothic, sans-serif;
+
+@mixin enFont($size, $lineHeight, $weight) {
+    //usefull weight 200, 400, 600, 800
+    font-family: $base-en-font;
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+    letter-spacing: -0.145px;
+}

@@ -5,11 +5,12 @@
 
     &-logo {
         position: fixed;
-        top: 40px;
-        left: 30px;
+        top: 50%;
+        left: 20px;
         width: 100px;
         height: 100px;
-        background: url('/assets/images/logo.png') center no-repeat;
+        background: url('/assets/images/logo.png') center /100% no-repeat;
+        transform: translateY(-50%);
         overflow: hidden;
 
         span {
@@ -41,6 +42,7 @@
     a {
         display: block;
         padding: 10px;
+        @include enFont(20px, 20px, 400);
         color: #fff;
     }
 }
